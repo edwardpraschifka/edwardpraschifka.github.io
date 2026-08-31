@@ -13,3 +13,5 @@ I also built Orbit, a graph-based Steam social exploration tool using the Steam 
 Beyond code, I completed an ANU China Studies Fellowship, spending a year studying in China and reaching HSK5-level Mandarin proficiency. I also worked as an Embedded Software Engineer intern at Silentium Defence. Outside of technical work, I read widely in philosophy and literature.
 
 I'm currently looking for a Graduate Software Developer Role! You can contact me on my [linkedin](https://www.linkedin.com/in/edward-praschifka/) or by email at edwardpraschifka@gmail.com.
+
+[resume](/assets/Edward_Praschifka_Resume.pdf)
