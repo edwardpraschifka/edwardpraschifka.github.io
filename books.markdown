@@ -6,11 +6,11 @@ permalink: /books/
 
 Books I'm reading:
 
-- *Crime And Punishment* — Fyodor Dostoevsky
 - *The Symposium* — Plato
 
 Books I've read:
-
+- *The Day of the Jackal* — Frederick Forsyth
+- *Crime And Punishment* — Fyodor Dostoevsky
 - *Pride and Prejudice* — Jane Austen
 - *The Epic of Gilgamesh*
 - *The Voyage of the Argo* — Apollonius of Rhodes
