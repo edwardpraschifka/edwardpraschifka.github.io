@@ -7,6 +7,7 @@ permalink: /books/
 Books I'm reading:
 
 - *The Symposium* — Plato
+- *1984* — George Orwell
 
 Books I've read:
 - *The Day of the Jackal* — Frederick Forsyth
