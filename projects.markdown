@@ -6,7 +6,7 @@ permalink: /projects/
 
 Things I'm building:
 
-- **Kinema** — A physics engine built from scratch in C++, including a custom math library ([source](https://github.com/edwardpraschifka))
+- **Kinema** — A physics engine built from scratch in C++, including a custom math library ([source](https://github.com/edwardpraschifka/kinema))
 
 Things I've built:
 - **TinyVector** — A from-scratch, templated C++ vector class built to master RAII, the Rule of Five, and const-correctness — with full test coverage under AddressSanitizer. ([source](https://github.com/edwardpraschifka/tiny-vector))
