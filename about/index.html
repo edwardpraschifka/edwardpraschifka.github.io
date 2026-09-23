@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("theme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", t);
+      document.documentElement.classList.remove("no-js");
+    } catch (e) {}
+  })();
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Edward Praschifka</title>
+<meta name="description" content="About Edward Praschifka: graduate software engineer, mathematics and machine learning background, Adelaide, South Australia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/">Edward Praschifka</a>
+    <div style="display:flex; align-items:center;">
+      <nav class="site-nav">
+        <a href="/about/">About</a>
+        <a href="/books/">Books</a>
+        <a href="/projects/">Projects</a>
+      </nav>
+      <button class="theme-toggle" aria-label="Switch to dark mode">🌙</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <h1 class="page-title">About</h1>
+
+  <div class="prose reveal" style="transition-delay: 0.05s;">
+    <p>I'm a graduate software engineer based in Adelaide, South Australia, with a Bachelor of Mathematical and Computer Sciences from the University of Adelaide. My work sits at the intersection of mathematics, machine learning, and systems programming, across embedded and backend development.</p>
+
+    <p>I care more about understanding why something works than just getting it to run. Most of my personal projects are built from first principles rather than off-the-shelf libraries. I've implemented a multilayer perceptron and a convolutional neural network from scratch in NumPy, deriving backpropagation, gradient checking, and loss functions by hand. I'm currently building a 3D rigid-body physics engine from scratch in C++, including my own math library, as a long-term project to deepen my systems and numerical programming skills.</p>
+
+    <p>I also built Orbit, a graph-based Steam social exploration tool using the Steam API, with caching and incremental graph expansion, backed by Flask and deployed on Render.</p>
+
+    <p>Beyond code, I completed an ANU China Studies Fellowship, spending a year studying in China and reaching HSK5 (Professional Working Proficiency) Mandarin. I also worked as an Embedded Software Engineer intern at Silentium Defence. Outside of technical work, I read widely in philosophy and literature.</p>
+
+    <p>I'm now looking for graduate roles in software development and embedded software development, particularly where I can apply my Mandarin proficiency and China Studies background in China-facing or defence-adjacent work.</p>
+
+    <p>I'm currently looking for a Graduate Software Developer Role! You can contact me on my <a href="https://www.linkedin.com/in/edward-praschifka/">linkedin</a> or by email at edwardpraschifka@gmail.com.</p>
+
+    <p><a href="/assets/Edward_Praschifka_Resume.pdf">resume</a></p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; 2026 Edward Praschifka</span>
+    <span><a href="mailto:edwardpraschifka@gmail.com">edwardpraschifka@gmail.com</a></span>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

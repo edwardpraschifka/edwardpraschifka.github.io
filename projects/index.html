@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("theme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", t);
+      document.documentElement.classList.remove("no-js");
+    } catch (e) {}
+  })();
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Edward Praschifka</title>
+<meta name="description" content="Projects by Edward Praschifka: things being built and things already built, from a C++ physics engine to neural networks from scratch.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/">Edward Praschifka</a>
+    <div style="display:flex; align-items:center;">
+      <nav class="site-nav">
+        <a href="/about/">About</a>
+        <a href="/books/">Books</a>
+        <a href="/projects/">Projects</a>
+      </nav>
+      <button class="theme-toggle" aria-label="Switch to dark mode">🌙</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <h1 class="page-title">Projects</h1>
+
+  <div class="reveal" style="transition-delay: 0.05s;">
+    <h2 class="section-heading">Things I'm building</h2>
+    <ul class="project-list">
+      <li class="project-item">
+        <div class="project-name">Kinema</div>
+        <div class="project-desc">A physics engine built from scratch in C++, including a custom math library</div>
+        <div class="project-links">
+          <a href="https://github.com/edwardpraschifka/kinema">source</a>
+        </div>
+      </li>
+    </ul>
+
+    <h2 class="section-heading">Things I've built</h2>
+    <ul class="project-list">
+      <li class="project-item">
+        <div class="project-name">TinyVector</div>
+        <div class="project-desc">A from-scratch, templated C++ vector class built to master RAII, the Rule of Five, and const-correctness — with full test coverage under AddressSanitizer.</div>
+        <div class="project-links">
+          <a href="https://github.com/edwardpraschifka/tiny-vector">source</a>
+        </div>
+      </li>
+      <li class="project-item">
+        <div class="project-name">Orbit</div>
+        <div class="project-desc">A graph-based Steam social exploration app using the Steam API, with caching and incremental expansion of a user's relationship graph</div>
+        <div class="project-links">
+          <a href="https://orbit-upv6.onrender.com/">demo</a>
+          <a href="https://github.com/edwardpraschifka/orbit">source</a>
+        </div>
+      </li>
+      <li class="project-item">
+        <div class="project-name">CNN From Scratch</div>
+        <div class="project-desc">A convolutional neural network implemented from scratch in NumPy for MNIST digit classification, with full manual backpropagation validated against PyTorch</div>
+        <div class="project-links">
+          <a href="https://github.com/edwardpraschifka/mnist-classifier-cnn">source</a>
+        </div>
+      </li>
+      <li class="project-item">
+        <div class="project-name">MLP From Scratch</div>
+        <div class="project-desc">A multilayer perceptron built from scratch in NumPy for MNIST classification, covering backpropagation, gradient checking, and multiple cost functions</div>
+        <div class="project-links">
+          <a href="https://github.com/edwardpraschifka/mnist-classifier-mlp">source</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; 2026 Edward Praschifka</span>
+    <span><a href="mailto:edwardpraschifka@gmail.com">edwardpraschifka@gmail.com</a></span>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

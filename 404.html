@@ -1,25 +1,55 @@
----
-permalink: /404.html
-layout: default
----
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("theme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", t);
+      document.documentElement.classList.remove("no-js");
+    } catch (e) {}
+  })();
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 — Edward Praschifka</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/">Edward Praschifka</a>
+    <div style="display:flex; align-items:center;">
+      <nav class="site-nav">
+        <a href="/about/">About</a>
+        <a href="/books/">Books</a>
+        <a href="/projects/">Projects</a>
+      </nav>
+      <button class="theme-toggle" aria-label="Switch to dark mode">🌙</button>
+    </div>
+  </div>
+</header>
 
-<div class="container">
-  <h1>404</h1>
+<main>
+  <div class="error-page reveal">
+    <div class="code">404</div>
+    <p><strong>Page not found :(</strong></p>
+    <p>The requested page could not be found.</p>
+    <p><a href="/">Back home</a></p>
+  </div>
+</main>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; 2026 Edward Praschifka</span>
+    <span><a href="mailto:edwardpraschifka@gmail.com">edwardpraschifka@gmail.com</a></span>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
