@@ -190,6 +190,17 @@ main {
   padding-top: 24px;
 }
 
+.avatar {
+  display: block;
+  width: 96px;
+  height: 96px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 3px solid var(--bg-elevated);
+  box-shadow: var(--shadow);
+  margin-bottom: 24px;
+}
+
 .eyebrow {
   display: inline-flex;
   align-items: center;
