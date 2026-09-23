@@ -291,6 +291,18 @@ main {
   color: var(--accent);
 }
 
+.btn-icon {
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  justify-content: center;
+}
+.btn-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -363,16 +375,43 @@ main {
 }
 
 .project-item {
+  position: relative;
   border: 1px solid var(--border);
   background: var(--bg-elevated);
   border-radius: var(--radius);
   padding: 18px 20px;
   box-shadow: var(--shadow);
+  transition: transform 0.18s ease, border-color 0.18s ease;
+}
+.project-item:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
 }
 
 .project-item .project-name {
+  display: inline-block;
   font-weight: 700;
   font-size: 1.02rem;
+  color: var(--text);
+}
+.project-item .project-name:hover {
+  text-decoration: none;
+}
+.project-item .project-name::before {
+  /* Stretch the repo link over the whole card */
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+}
+.project-item .project-name::after {
+  content: " \2197";
+  color: var(--text-muted);
+  font-weight: 500;
+}
+.project-item:hover .project-name,
+.project-item:hover .project-name::after {
+  color: var(--accent);
 }
 
 .project-item .project-desc {
@@ -382,11 +421,16 @@ main {
 }
 
 .project-links {
-  margin-top: 10px;
+  position: relative;
+  z-index: 1;
+  margin-top: 12px;
   display: flex;
-  gap: 14px;
-  font-size: 0.88rem;
-  font-weight: 600;
+  gap: 10px;
+}
+
+.btn-small {
+  padding: 6px 14px;
+  font-size: 0.85rem;
 }
 
 /* Books */
