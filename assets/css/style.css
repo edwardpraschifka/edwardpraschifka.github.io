@@ -192,13 +192,13 @@ main {
 
 .avatar {
   display: block;
-  width: 96px;
-  height: 96px;
+  width: 160px;
+  height: 160px;
   border-radius: 999px;
   object-fit: cover;
-  border: 3px solid var(--bg-elevated);
+  border: 4px solid var(--bg-elevated);
   box-shadow: var(--shadow);
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 
 .eyebrow {
